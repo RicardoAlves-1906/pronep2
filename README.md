@@ -3,4 +3,4 @@
 
 PAGINA INICIAL
 
-<a href="https://github.com/RicardoAlves-1906/pronep/blob/main/index.html">Visualizar Codigo</a> / <a href="">visualizar site</a>
+<a href="https://github.com/RicardoAlves-1906/pronep/blob/main/index.html">Visualizar Codigo</a> / <a href="https://ricardoalves-1906.github.io/pronep2/">visualizar site</a>
