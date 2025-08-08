@@ -1,0 +1,305 @@
+
+/* nav e banner video */
+/* Remove margem padrão */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Seção do banner */
+.banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#bd {
+  transition: color 0.3s ease;
+}
+  #bd:hover{
+    border-color: #7ff548 !important;
+  }
+
+/* Vídeo ocupa toda a tela */
+.video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+/* Conteúdo sobre o vídeo */
+.overlay-content {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3); /* Leve sobreposição para contraste */
+}
+
+/* Logotipo */
+.logo {
+  max-width: 200px;
+  margin-bottom: 20px;
+}
+
+/* Título */
+.titulo {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+/* fim nav */
+
+/* inicio banner */
+
+/* blocos */
+/* Container opcional para centralizar */
+
+#blocos {
+    position: absolute;
+    top: 859px;
+    left: 100px;
+    z-index: 4;
+}
+
+.container {
+  padding: 20px;
+}
+
+/* Card (article) */
+.card {
+  width: 300px;
+  align-items: center;
+  background-color: rgba(22,54,57,0.75); /* azul meio transparente */
+  color: #84d00a; /* título e ícone verdes */
+  padding: 20px;
+  border-radius: 8px 8px 0 0;
+  overflow: hidden;
+  position: relative;
+  top: 50px;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+  height: 200px;
+  }
+
+  .card:hover {
+    background-color: #84d00a; /* verde sólido */
+    color: #004488; /* muda o texto principal pra azul */
+    top: -50px;
+    opacity: 1;
+  }
+
+  #conteudotab {
+    position: relative;
+    z-index: 5;
+    background-image: url(/imagens/choosing-bg.jpg);
+    height: 700px;
+  
+  }
+
+ 
+
+
+/* Cabeçalho do card: ícone + título */
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Ícone */
+.icon {
+  font-size: 1.8rem;
+  transition: color 0.4s;
+}
+
+/* Título */
+.card-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  transition: color 0.4s;
+}
+
+/* Conteúdo oculto inicialmente */
+.card-content {
+  margin-top: 15px;
+  display: none;
+  color: #2D4803; /* verde escuro */
+  transition: opacity 0.4s;
+}
+
+/* Link */
+.card-content a {
+  color: #2D4803;
+  text-decoration: underline;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+/* HOVER */
+
+/* Mostra conteúdo no hover */
+.card:hover .card-content {
+  display: block;
+}
+
+/* Ícone e título mudam de cor no hover */
+.card:hover .icon,
+.card:hover .card-title {
+  color: #004488; /* azul */
+}
+/* fim dos cards */
+
+/* tabs(O PROGRAMA)  */
+#op {
+ display: inline-flex;
+ margin-left: 250px;
+ text-align: center;
+ 
+
+    
+    width: 20px; 
+    height: 20px; 
+    background-color: rgb(38, 109, 5); 
+    border: 2px solid rgb(119, 250, 67); 
+}
+
+#tabs {
+  text-align: center;
+}
+
+  
+#tabs ul::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+#tabs ul li {
+  display: block;
+  font-weight: 400;
+  font-size: 1.2em;
+  letter-spacing: 1px;
+  text-align: center;
+}
+#tabs ul li a {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: pointer;
+  outline: 0;
+  padding-bottom: 30px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  position: relative;
+}
+#tabs ul li a:after {
+    transition: all 0.3s;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 0;
+}
+#tabs ul li a:before {
+    transition: all 0.3s;
+    width: 25px;
+    height: 25px;
+    border: 2px solid transparent;
+    background-color: transparent;
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: -5px;
+}
+#tabs ul li span {
+  display: block;
+  margin-bottom: 0.75em;
+}
+/* #tabs ul .ui-tabs-active {
+}
+#tabs ul .ui-tabs-active a {
+  color: #85CF12;
+} */
+#tabs ul .ui-tabs-active a:after {
+  background-color: #85CF12;
+  width: 15px;
+  height: 15px;
+}
+#tabs ul .ui-tabs-active a:before {
+  border-color: #85CF12;
+}
+#tabs h4 {
+    margin-top: 60px;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+#tabs p {
+    color: #fff;
+    font-size: 15px;
+    line-height: 28px;
+}
+
+/* CONTINUAR TESTE HOVER EM METODOLOGIA */
+
+#op {
+  text-decoration: none;
+  transition: color 0.3 ease;
+}
+
+ #op:hover {
+  border-color: #7ff548 !important;
+
+ }
+
+ /* banner relogio */
+
+ #imgturma {
+    position: relative;
+    z-index: 5;
+    background-image: url(/imagens/coming-soon-bg.jpg);
+    height: 680px;
+    
+    
+  }
+
+
+
+ .right-content {
+  
+  float: right;
+
+ }
+
+ .value {
+  width: 100px;
+  height: 70px;
+  text-align: center;
+  justify-items: center;
+ }
+
+ #contact1, #contact2 {
+  background-color: ; 
+  opacity: ;
+
+}
